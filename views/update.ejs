@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo7</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+
+<form action="/update" method="post" enctype="application/x-www-form-urlencoded">
+    <h2>tieude: <%= data.tieude %> </h2>
+    <h2>noidung: <%= data.noidung %> </h2>
+    <h2>ngaythang: <%= data.ngaythang %> </h2>
+    <h2>links: <%= data.links %> </h2>
+
+    <hr>
+    <div>ID:<input name="id" value="<%=data._id%>" readonly></div>
+    <div>tieude: <input name="tieude" value="<%=data.tieude%>"></div>
+    <div>noidung: <input name="noidung" value="<%=data.noidung%>"></div>
+    <div>ngaythang: <input name="ngaythang" value="<%=data.ngaythang%>"></div>
+    <div>links: <input name="links" value="<%=data.links%>"></div>
+
+    <button type="submit">Update</button>
+</form>
+</body>
+</html>
